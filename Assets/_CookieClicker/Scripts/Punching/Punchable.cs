@@ -7,11 +7,10 @@ public abstract class Punchable : MonoBehaviour
 {
     public float minimumVelocity = 1.5f;
 
-    private HandController leftHand;
-    private HandController rightHand;
-    private DetectVelocity rightHandVelocity;
-    private DetectVelocity leftHandVelocity;
-
+    public HandController leftHand;
+    public HandController rightHand;
+    public DetectVelocity rightHandVelocity;
+    public DetectVelocity leftHandVelocity;
 
     public virtual void Start()
     {
@@ -20,7 +19,7 @@ public abstract class Punchable : MonoBehaviour
         rightHandVelocity = rightHand.GetComponent<DetectVelocity>();
         leftHandVelocity = leftHand.GetComponent<DetectVelocity>();
     }
-    private void OnTriggerEnter(Collider other)
+    public virtual void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Grabber"))
         {
@@ -60,7 +59,7 @@ public abstract class Punchable : MonoBehaviour
             return false;
         }
     }
-    private bool checkFists(HandController Hand, Collider other)
+    public bool checkFists(HandController Hand, Collider other)
     {
         if(Hand != null)
         {
