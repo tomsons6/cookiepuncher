@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
         UpdateText();
         GameManager.Instance.objectWasPunched += UpdateText;
     }
-    void UpdateText()
+    public void UpdateText()
     {
         cookieCount.text = "Coockies crunched - " + string.Format("{0:0.0}", GameManager.Instance.playerStats.cookieCount);
         strenght.text = "Current strenght - " + string.Format("{0:0.0}", GameManager.Instance.playerStats.punchStrenght);
