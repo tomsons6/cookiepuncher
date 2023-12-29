@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class UpgradeJar : Punchable
+public partial class UpgradeJar : Punchable
 {
     [SerializeField]
     UpgradeJarScriptable stats;
@@ -16,6 +17,10 @@ public class UpgradeJar : Punchable
         base.Start();
         priceText.text = stats.price.ToString();
         upgradeDescription.text = stats.upgradeDescription.ToString();
+        if (stats.upgradeBought)
+        {
+            BoughtUpgrade();
+        }
     }
 
     public override void punched()
@@ -25,10 +30,14 @@ public class UpgradeJar : Punchable
             GameManager.Instance.playerStats.cookieCount -= stats.price;
             if (!stats.upgradeBought)
             {
+                BoughtUpgrade();
                 stats.upgradeBought = true;
             }
-            GameManager.Instance.objectWasPunched?.Invoke();
             Debug.Log("ItemBough");
         }
+    }
+    public virtual void BoughtUpgrade()
+    {
+
     }
 }

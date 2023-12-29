@@ -5,12 +5,12 @@ using UnityEngine;
 
 public abstract class Punchable : MonoBehaviour
 {
-    public float minimumVelocity = 1.5f;
-
-    public HandController leftHand;
-    public HandController rightHand;
-    public DetectVelocity rightHandVelocity;
-    public DetectVelocity leftHandVelocity;
+    [SerializeField]
+    float minimumVelocity = 1.5f;
+    HandController leftHand;
+    HandController rightHand;
+    DetectVelocity rightHandVelocity;
+    DetectVelocity leftHandVelocity;
 
     public virtual void Start()
     {
@@ -23,7 +23,7 @@ public abstract class Punchable : MonoBehaviour
     {
         if (other.CompareTag("Grabber"))
         {
-            if (checkFists(rightHand,other) || checkFists(leftHand, other))
+            if (checkFists(rightHand, other) || checkFists(leftHand, other))
             {
                 if (checkVelocity())
                 {
@@ -43,9 +43,9 @@ public abstract class Punchable : MonoBehaviour
     }
     private bool checkVelocity()
     {
-        if(rightHandVelocity != null || leftHandVelocity != null)
+        if (rightHandVelocity != null || leftHandVelocity != null)
         {
-            if(rightHandVelocity.currentVelocitey > minimumVelocity || leftHandVelocity.currentVelocitey > minimumVelocity)
+            if (rightHandVelocity.currentVelocitey > minimumVelocity || leftHandVelocity.currentVelocitey > minimumVelocity)
             {
                 return true;
             }
@@ -61,9 +61,9 @@ public abstract class Punchable : MonoBehaviour
     }
     public bool checkFists(HandController Hand, Collider other)
     {
-        if(Hand != null)
+        if (Hand != null)
         {
-            if( other.transform.parent.name == Hand.name)
+            if (other.transform.parent.name == Hand.name)
             {
                 if (Hand.GripAmount > .8f && Hand.PointAmount < .1f && Hand.ThumbAmount < .1f)
                 {

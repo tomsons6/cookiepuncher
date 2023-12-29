@@ -37,8 +37,8 @@ public class AutoCruncher : MonoBehaviour
     }
     public void UpdateTexts()
     {
-        strenght.text = string.Format("{0:0.0}", stats.crunchStrenght);
-        waitTime.text = string.Format("{0:0.0}", stats.waitTime);
+        strenght.text = "Crunch strenght - " + string.Format("{0:0.0}", stats.crunchStrenght);
+        waitTime.text = "Wait time - " + string.Format("{0:0.0}", stats.waitTime);
         additionAnimation.GetComponentInChildren<TMP_Text>().text = "+" + string.Format("{0:0.0}", stats.crunchStrenght);
     }
 
