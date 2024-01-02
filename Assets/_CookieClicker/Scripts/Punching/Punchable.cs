@@ -11,6 +11,7 @@ public abstract class Punchable : MonoBehaviour
     HandController rightHand;
     DetectVelocity rightHandVelocity;
     DetectVelocity leftHandVelocity;
+    AudioSource audioSource;
 
     public virtual void Start()
     {
@@ -18,6 +19,7 @@ public abstract class Punchable : MonoBehaviour
         rightHand = GameObject.Find("RightController").GetComponent<HandController>();
         rightHandVelocity = rightHand.GetComponent<DetectVelocity>();
         leftHandVelocity = leftHand.GetComponent<DetectVelocity>();
+        audioSource = GetComponent<AudioSource>();
     }
     public virtual void OnTriggerEnter(Collider other)
     {
@@ -40,6 +42,7 @@ public abstract class Punchable : MonoBehaviour
     public virtual void punched()
     {
         GameManager.Instance.objectWasPunched?.Invoke();
+        PlaySound();
     }
     private bool checkVelocity()
     {
@@ -84,5 +87,11 @@ public abstract class Punchable : MonoBehaviour
             return false;
         }
     }
-
+    void PlaySound()
+    {
+        if(audioSource != null)
+        {
+            audioSource.Play();
+        }
+    }
 }
