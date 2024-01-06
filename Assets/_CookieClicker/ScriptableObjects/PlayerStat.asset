@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf1d97cb58f3ed4c9e20a9a849e18fc, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
-  cookieCount: 102
-  punchStrenght: 2.2000003
-  currentBagLevelTotal: 17
-  bagHitsLeft: 17
+  cookieCount: 0
+  punchStrenght: 1
+  currentBagLevelTotal: 10
+  bagHitsLeft: 10

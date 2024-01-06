@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4bf83d9d28e2c4d9fa2ba5bc1f75c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumVelocity: 1.5
+  minimumVelocity: 1.2
   stats: {fileID: 11400000, guid: 77a697f39c4b77e4280e7d43419765db, type: 2}
   priceText: {fileID: 136096871}
   upgradeDescription: {fileID: 136096870}
@@ -1747,7 +1747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &513561962
 Transform:
   m_ObjectHideFlags: 0
@@ -5422,7 +5422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1663836426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5637,7 +5637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Make a fist by using trigger, grip, touch analog. \n Crunch some cookies!
+  m_text: Make a fist by using trigger, grip, a or x buttons. \n Crunch some cookies!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eff47f54028ce804e8526fb69af66562, type: 2}
   m_sharedMaterial: {fileID: -2105453344377550028, guid: eff47f54028ce804e8526fb69af66562, type: 2}
@@ -6632,7 +6632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4bf83d9d28e2c4d9fa2ba5bc1f75c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumVelocity: 1.5
+  minimumVelocity: 1.2
   stats: {fileID: 11400000, guid: a5e3a8a829ecabb4bb094b4e36b41b69, type: 2}
   priceText: {fileID: 206218800}
   upgradeDescription: {fileID: 1741376842}
@@ -7467,6 +7467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6792045922629817249, guid: f293e4560ef8fff438c6fe22389af4df, type: 3}
+      propertyPath: minimumVelocity
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7737,6 +7741,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8734848692588855386, guid: 1b243c357882f644fa63532bebe0fbd3, type: 3}
+      propertyPath: minimumVelocity
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 446596058971275772, guid: 1b243c357882f644fa63532bebe0fbd3, type: 3}
     m_RemovedGameObjects: []
@@ -7860,13 +7868,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 617717187832245401, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: GroundedLayers.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 752984470297199904, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_TagString
       value: Grabber
       objectReference: {fileID: 0}
+    - target: {fileID: 1092977463886193350, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: InputSource
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092977463886193350, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: LeftThumbNear
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2083961992933513428, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_TagString
       value: Grabber
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380464442950510126, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: ToggleHandsInput
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938981264000335280, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: CollisionLayers.m_Bits
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747518811118836010, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270528, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_Name
@@ -7886,23 +7918,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.0405815
+      value: -1.454
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7303454
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.683078
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7910,13 +7942,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 86.169
       objectReference: {fileID: 0}
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7012180044726152907, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: m_StepOffset
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 928160206308788137, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+    - {fileID: 4938981264000335280, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+    - {fileID: 2914140353757673469, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

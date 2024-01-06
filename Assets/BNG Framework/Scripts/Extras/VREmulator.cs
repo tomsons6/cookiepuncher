@@ -215,6 +215,7 @@ namespace BNG {
             InputBridge.Instance.RightTrigger = Input.GetKey(RightTrigger) ? 1f : 0;
             InputBridge.Instance.RightGrip = Input.GetKey(RightGrip) ? 1f : 0;
             InputBridge.Instance.RightThumbNear = Input.GetKey(RightThumbNear);
+            InputBridge.Instance.AButton = Input.GetKey(KeyCode.C);
         }
 
         public void CheckPlayerControls() {
