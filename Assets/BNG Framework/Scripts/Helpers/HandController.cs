@@ -132,7 +132,7 @@ namespace BNG {
                     PointAmount = 1;
                 }
 
-                ThumbAmount = input.XButton ? 0 : 1;
+                ThumbAmount = (input.LeftTrigger > .5f) ? 0 : 1;
             }
             else if (grabber.HandSide == ControllerHand.Right) {
                 GripAmount = input.RightGrip;
@@ -148,7 +148,7 @@ namespace BNG {
                     PointAmount = 1;
                 }
 
-                ThumbAmount = input.AButton ? 0 : 1;
+                ThumbAmount = (input.RightTrigger > .5f ) ? 0 : 1   ;
             }            
 
             // Try getting child animator
