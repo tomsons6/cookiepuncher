@@ -15,7 +15,7 @@ public partial class UpgradeJar : Punchable
     public override void Start()
     {
         base.Start();
-        priceText.text = stats.price.ToString();
+        priceText.text = stats.price.ToString() + " Cookies";
         upgradeDescription.text = stats.upgradeDescription.ToString();
         if (stats.upgradeBought)
         {
@@ -38,6 +38,6 @@ public partial class UpgradeJar : Punchable
     }
     public virtual void BoughtUpgrade()
     {
-
+        priceText.text = "Bought";
     }
 }
