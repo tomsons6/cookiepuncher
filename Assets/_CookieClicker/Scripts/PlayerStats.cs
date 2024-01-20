@@ -9,5 +9,6 @@ public class PlayerStats : ScriptableObject
     public float punchStrenght = 1;
     public int currentBagLevelTotal = 10;
     public int bagHitsLeft = 10;
+    public bool IntroSequence = false;
 
 }

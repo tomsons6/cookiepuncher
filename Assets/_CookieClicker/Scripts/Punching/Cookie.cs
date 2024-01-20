@@ -17,6 +17,7 @@ public class Cookie : Punchable
         base.punched();
         coockieParticles.Play();
         StartCoroutine(animation.PunchAnimation());
+        StartCoroutine(animation.PlusOneText());
         GameManager.Instance.playerStats.cookieCount += GameManager.Instance.playerStats.punchStrenght;
     }
 }
