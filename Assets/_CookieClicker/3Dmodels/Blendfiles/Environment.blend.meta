@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 1107e273b0707bc4e9a67f87cf8406ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Environment
     second: {fileID: 2100000, guid: 3e96aab1f5c2e444e8f0fdc52cd845bb, type: 2}
   - first:
@@ -44,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Light
     second: {fileID: 2100000, guid: ea2f4fe80a0169849b8688b0f9e56133, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows
+    second: {fileID: 2100000, guid: 8bd354c02378b904ba97aa1611225a24, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

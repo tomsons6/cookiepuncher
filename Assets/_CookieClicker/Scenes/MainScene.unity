@@ -4841,7 +4841,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -9684,6 +9684,18 @@ PrefabInstance:
     - target: {fileID: 6440275208406270530, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440275208438680212, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: m_FocalLength
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440275208438680212, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440275208438680212, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7012180044726152907, guid: f5c552dba8f53bf40ba100c6d9e28a6a, type: 3}
       propertyPath: m_StepOffset
