@@ -13,6 +13,8 @@ public abstract class Punchable : MonoBehaviour
     DetectVelocity leftHandVelocity;
     AudioSource audioSource;
 
+    public bool autoFist = false;
+
     public virtual void Start()
     {
         leftHand = GameObject.Find("LeftController").GetComponent<HandController>();
@@ -25,18 +27,28 @@ public abstract class Punchable : MonoBehaviour
     {
         if (other.CompareTag("Grabber"))
         {
-            if (checkFists(rightHand, other) || checkFists(leftHand, other))
+            if (autoFist)
             {
-                if (checkVelocity())
-                {
-                    punched();
-                }
-                else
-                {
-                    Debug.Log("You weakling");
-                }
-
+                PunchWithChecks(other);
             }
+            else
+            {
+                if (checkFists(rightHand, other) || checkFists(leftHand, other))
+                {
+                    PunchWithChecks(other);
+                }
+            }
+        }
+    }
+    void PunchWithChecks(Collider other)
+    {
+        if (checkVelocity())
+        {
+            punched();
+        }
+        else
+        {
+            Debug.Log("You weakling");
         }
     }
     public virtual void punched()
@@ -89,7 +101,7 @@ public abstract class Punchable : MonoBehaviour
     }
     void PlaySound()
     {
-        if(audioSource != null)
+        if (audioSource != null)
         {
             audioSource.Play();
         }

@@ -25,7 +25,7 @@ public partial class UpgradeJar : Punchable
 
     public override void punched()
     {
-        if(GameManager.Instance.playerStats.cookieCount >= stats.price)
+        if (GameManager.Instance.playerStats.cookieCount >= stats.price)
         {
             GameManager.Instance.playerStats.cookieCount -= stats.price;
             if (!stats.upgradeBought)
@@ -36,7 +36,7 @@ public partial class UpgradeJar : Punchable
             Debug.Log("ItemBough");
         }
     }
-    public virtual void BoughtUpgrade()
+    public virtual void BoughtUpgrade() 
     {
         priceText.text = "Bought";
     }

@@ -68,6 +68,7 @@ namespace BNG {
 
             // Deactivate any previous models
             if(LeftHandGFXHolder.childCount > _selectedHandGFX) {
+                Debug.Log(_selectedHandGFX);
                 LeftHandGFXHolder.GetChild(_selectedHandGFX).gameObject.SetActive(false);
                 RightHandGFXHolder.GetChild(_selectedHandGFX).gameObject.SetActive(false);
             }
