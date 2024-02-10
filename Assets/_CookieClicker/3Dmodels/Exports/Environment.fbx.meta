@@ -8,37 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bulb
-    second: {fileID: 2100000, guid: f084b87147a6c3146a74ab367e771755, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cieling
-    second: {fileID: 2100000, guid: 02c4ac8a8288d2a43a1d513faf54850b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CounterBase
-    second: {fileID: 2100000, guid: a9975376681da524995a6c5bc227e034, type: 2}
+    second: {fileID: 2100000, guid: 7ad35df00d56b7c41b6689459451747b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CounterTop
-    second: {fileID: 2100000, guid: ea04fb7d2ae69a94fa0ca4c814ddf4ec, type: 2}
+    second: {fileID: 2100000, guid: d1fc655d55083e846b082f6547a9127b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor
-    second: {fileID: 2100000, guid: 58665b32dc83c5640a6812a8ebd12dd2, type: 2}
+      name: Door
+    second: {fileID: 2100000, guid: f26cc8b372c10344aa32c371cc3fd0d9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: InteriorWall
-    second: {fileID: 2100000, guid: 795faee7942c78747a9b586a8b57cd57, type: 2}
+      name: Environment
+    second: {fileID: 2100000, guid: deb98e773a32afd4cbbc551dde4efdfc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Light
-    second: {fileID: 2100000, guid: ea2f4fe80a0169849b8688b0f9e56133, type: 2}
+      name: LightFrame
+    second: {fileID: 2100000, guid: 97c3aa13fbbcf0c4cb46b79210096d26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows
+    second: {fileID: 2100000, guid: 57dcae244031764449ed8d2d6c0ddbfc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -49,7 +44,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -67,7 +62,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -136,7 +131,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

@@ -12,11 +12,13 @@ public partial class UpgradeJar : Punchable
     TMP_Text priceText;
     [SerializeField]
     TMP_Text upgradeDescription;
+    ParticleSystem particles;
     public override void Start()
     {
         base.Start();
         priceText.text = stats.price.ToString() + " Cookies";
         upgradeDescription.text = stats.upgradeDescription.ToString();
+        particles = GetComponentInChildren<ParticleSystem>();
         if (stats.upgradeBought)
         {
             BoughtUpgrade();
@@ -32,6 +34,7 @@ public partial class UpgradeJar : Punchable
             {
                 BoughtUpgrade();
                 stats.upgradeBought = true;
+                particles.Play();
             }
             Debug.Log("ItemBough");
         }
