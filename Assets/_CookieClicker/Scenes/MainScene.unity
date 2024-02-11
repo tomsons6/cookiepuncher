@@ -1792,7 +1792,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 290739057640771820, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 1373350654833679988, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2744,7 +2744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 290739057640771820, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 1373350654833679988, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4773,8 +4773,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -5759,7 +5759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 64abc41273e7cd94b899b21d876134d2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 127
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6581,7 +6581,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.565
   sharedProfile: {fileID: 11400000, guid: 9252497ddac6aaa44a8b2669f8088c23, type: 2}
 --- !u!4 &1465050030
 Transform:
@@ -9252,7 +9252,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 290739057640771820, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 1373350654833679988, guid: 22d9ac06935ca9c4e909847ecb64b8ab, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9356,6 +9356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 63637176489385524, guid: f293e4560ef8fff438c6fe22389af4df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4662847758390094069, guid: f293e4560ef8fff438c6fe22389af4df, type: 3}
       propertyPath: m_Name
       value: PunchingBag

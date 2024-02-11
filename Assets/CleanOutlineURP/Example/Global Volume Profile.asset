@@ -17,7 +17,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   debugMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   outlineColor:
     m_OverrideState: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   enableClosenessBoost:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   closenessBoostThickness:
     m_OverrideState: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.394
   depthSampleType:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   depthThickness:
     m_OverrideState: 1
