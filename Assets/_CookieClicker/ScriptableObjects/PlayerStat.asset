@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf1d97cb58f3ed4c9e20a9a849e18fc, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
-  cookieCount: 208
+  cookieCount: 1
   punchStrenght: 1
   currentBagLevelTotal: 10
   bagHitsLeft: 10
-  IntroSequence: 1
+  IntroSequence: 0

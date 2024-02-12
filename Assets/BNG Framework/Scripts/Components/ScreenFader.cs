@@ -36,12 +36,12 @@ namespace BNG {
         protected virtual void initialize() {
             // Create a Canvas that will be placed directly over the camera
             if (fadeObject == null) {
-                Canvas childCanvas = GetComponentInChildren<Canvas>();
+                //Canvas childCanvas = GetComponentInChildren<Canvas>();
 
-                if (childCanvas != null) {
-                    GameObject.Destroy(this.gameObject);
-                    return;
-                }
+                //if (childCanvas != null) {
+                //    GameObject.Destroy(this.gameObject);
+                //    return;
+                //}
                 fadeObject = new GameObject();
                 fadeObject.transform.parent = Camera.main.transform;
                 fadeObject.transform.localPosition = new Vector3(0, 0, 0.03f);
