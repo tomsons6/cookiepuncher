@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windows
-  m_Shader: {fileID: -6465566751694194690, guid: a8b16a94163f434469be62d7573aea73, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 688f68a4de9531849aa5f658ebefdbce, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -96,12 +96,13 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Alpja_Clip_Threshold: 1.26
+    - _Alpja_Clip_Threshold: 0.79
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Color2: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -112,7 +113,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LineAlpha: 0.4
+    - _LineAlpha: 0.86
     - _LineWidth: 0.5
     - _Metallic: 0
     - _Mode: 0
@@ -136,7 +137,8 @@ Material:
     - _b: 1
     m_Colors:
     - _BaseColor: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
-    - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color2: {r: 0.759434, g: 1, b: 0.99556106, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
