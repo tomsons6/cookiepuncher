@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 1
   upgradeDescription: Do not have to hold down buttons
-  upgradeBought: 1
+  upgradeBought: 0

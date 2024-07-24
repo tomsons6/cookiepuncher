@@ -10,8 +10,8 @@ public class HighScore : MonoBehaviour
     string appId = "24602120609403423";
     void Start()
     {
-        StartCoroutine(init());
-        Debug.Log(Oculus.Platform.Core.IsInitialized());
+        //StartCoroutine(init());
+        //Debug.Log(Oculus.Platform.Core.IsInitialized());
     }
 
     // Update is called once per frame
